@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.1/font/bootstrap-icons.css" rel="stylesheet">	
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Sample</title>
+</head>
+<body class="container-fluid">
+    <p style="text-align: center; margin-top: 5px; font-size: 40px; color:#ffd89b">Registration</p>
+ <div id="box" class="d-flex justify-content-center align-items-center">
+    <form class="border rounded-3">
+        <div class="fstdv">
+          <label for="name">Name</label><br>
+          <input id="usrnm" min="4" class="fname" required name="username" pattern="[a-zA-Z]+ [a-zA-Z]+"><span class="bi bi-check-circle-fill"></span><div>Minimum 4 character is required*</div>
+         </div> 
+         <div class="sndv">
+          <label for="email">Email</label><br>
+          <input name="email" type="email" class="email" id="eml" pattern="[\w\W]+\.[a-zA-Z]{2,}+" required><span class="bi bi-check-circle-fill"></span><div>Enter valid email address*</div>
+          </div>
+          <div class="mbdv">
+            <label for="mobile">Mobile</label><br>
+            <input id="mbl" class="mobl" name="mobile" required pattern="\d{10}"><span class="bi bi-check-circle-fill"></span>
+            <div>10 digits only*</div>
+          </div>
+          <div class="stdv">
+            <label for="state">State</label><br>
+            <input id="state" name="region" list="stte">
+            <datalist id="stte">
+                <option>UP</option>
+                <option>Haryana</option>
+                <option>Delhi</option>
+                <option>Rajasthan</option>
+                <option>Karnatka</option>
+                <option>Tamil Nadu</option>
+                <option>Odisa</option>
+            </datalist>
+          </div>
+          <div class="thdv"> 
+            <div class="leftsec">   
+            <lable for="age">Age</lable><br>
+            <input id="age" name="age" type="number" class="Age" min="15" max="45">
+            <div>Age 15 to 45 only</div> 
+            </div>
+            <div>  
+                <label class="form-label" for="gender">Gender</label><br>
+                <input class="form-check-input me-1" type="radio" name="gender" value="male">Male
+                <input class="form-check-input me-1" type="radio" name="gender" value="female">Female
+            </div>
+           </div>
+           <div class="usrdv">
+            <label for="username">Username</label><br>
+            <input class="unm" id="user" name="username" required pattern="[\w\W]{4,20}"><span class="bi bi-check-circle-fill"></span>
+            <div>Minimum 4 and upto 20 character only*</div>
+           </div> 
+           <div class="pswdv">
+            <label for="password">Password</label><br>
+            <input type="password" class="psrdw" name="password" id="pswd" required pattern="(?=.*[A-Z])(?=.*[!@#$])(?=.*[0-9])[a-zA-Z0-9!@#$]{4,20}"><span class="bi bi-check-circle-fill"></span><div>4 to 20 characters with one upper, lowercase, number and a special char*</div>
+           </div>
+        <div class="agrdv">
+            <input class="form-check-input" type="checkbox" name="agreement" id="agreement" required>
+            <label class="form-label" id="lbchk" sytle="align-items-end" for="agreement">Accept the terms of service.</label>
+        </div>
+           <div class="frdv">
+            <button type="submit" class="btn btn-primary">Create Account</button>
+           </div> 
+           <div class="lstdv mt-4">
+            <span>Already have an account?&nbsp;<font color=blue><a style="list-style: none;" href=#>Sign In</a></font>&nbsp;here.</span>
+        </div>
+    </form>
+  </div>  
+</body>
+</html>

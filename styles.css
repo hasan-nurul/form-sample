@@ -1,0 +1,90 @@
+body{
+            margin: 0;
+            background-image: linear-gradient(to top right, #ffd89b, #19547b);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 105vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        .Age:in-range+div {
+            display: none;
+        }
+        .Age:out-of-range+div {
+            display: block;
+            color:white;
+        }
+        .email:invalid+span, .fname:invalid+span, .mobl:invalid+span, .unm:invalid+span, .psrdw:invalid+span {
+            display: none;
+        }
+        .fname:valid+.bi-check-circle-fill, .email:valid+.bi-check-circle-fill, .mobl:valid+.bi-check-circle-fill, .unm:valid+.bi-check-circle-fill, .psrdw:valid+.bi-check-circle-fill {
+            display:inline;
+            color: #093c5e;
+            margin-left: -25px;
+            font-size: 18px;
+            padding-top: 20px;
+        }
+        #usrnm:focus~div, #eml:focus~div, #pswd:focus~div, #user:focus~div, #mbl:focus~div{
+            color: lightgray;
+            display: inline;
+            font-size: 14px;
+
+        }
+        #usrnm:focus, #eml:focus, #pswd:focus, #user:focus, #age:focus, #state:focus, #mbl:focus{
+            outline: none;
+        }    
+        #usrnm~div, #eml~div, #pswd~div, #user~div, #mbl~div{
+            display: none;
+        } 
+    
+        .Password:valid+.bi-check-circle-fill {
+            display: inline;
+            color: green;
+            margin-left: -100px;
+        }
+        .Password:invalid+span {
+            display: none;
+        }
+        .thdv{
+            display: flex;
+            justify-content:space-between;
+            margin-top: 15px;
+        }
+        .btn-primary{
+            width: 100%;
+            margin-top: 10px;
+        }
+        form{
+            color: white;
+            font-size: 17px;
+            letter-spacing: 0.8px;
+            width: 450px;
+            padding:15px 30px 15px 30px;
+            margin-top: 1px;
+            background-color: rgba(12, 78, 122,0.2);
+            font-weight:500;
+
+        }
+        .btn-primary{
+            background-color: #093c5e;
+            border: none;
+        }
+        .frdv, .adrdv, .pswdv, .usrdv, .thdv, .stdv, .mbdv, .sndv, .fstdv{
+            margin-top: 10px;
+        }
+        .agrdv{
+            margin-top:20px;
+        }
+        .lstdv{
+            display: flex;
+            justify-content: center;
+        }
+        #usrnm, #eml, #pswd, #user, #age, #state, #mbl{
+            background-color: rgba(255, 255, 255,0.5); 
+            color: #043250; 
+            font-size: 16px; 
+            border: none; 
+            border-radius: 5px; 
+            height: 33px; 
+            width: 100%; 
+            align-items:center;
+        }
